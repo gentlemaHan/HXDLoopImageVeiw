@@ -9,11 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "LoopImage.h"
 
-typedef NS_ENUM(NSInteger, branchTag) {
-    branchTag_yang = 1,
-    branchTag_huang
-};
-
 @protocol LoopImgViewDelegate <NSObject>
 
 -(void)clickBannerWithIndex:(LoopImage *)imgLoop;
@@ -32,6 +27,5 @@ typedef NS_ENUM(NSInteger, branchTag) {
 @property (nonatomic,assign)    id<LoopImgViewDelegate>delegate;
 
 -(void)setBanners:(NSArray<LoopImage *> *)banners;
-@property (nonatomic,assign)    branchTag   branchtag;
 
 @end
